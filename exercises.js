@@ -62,3 +62,11 @@ function exercise_19() {}
 function exercise_20() {}
 
 function exercise_21() {}
+
+function exercise_22() {}
+
+function exercise_23() {}
+
+function exercise_24() {}
+
+function exercise_25() {}
