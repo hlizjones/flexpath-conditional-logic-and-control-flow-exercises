@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_12();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -278,14 +278,21 @@ export function exercise_13() {
     Exercise 13
     
     Increment: 
+
+    1. Create a variable and assign it the number 5.
+    2. Increment the variable using the `++` operator, and log the variable.
+    3. Then, decrement the variable using the `--` operator twice. 
+       Log the variable again.
     
-    Increment a variable and log the result.
   
   */
   // CODE IN THE OPEN LINES BELOW
   let count = 5;
   count++;
   console.log(count); // 6
+  count--;
+  count--;
+  console.log(count); // 4
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -294,15 +301,19 @@ export function exercise_14() {
    
     Exercise 14
     
-    Decrement: 
-    
-    Decrement a variable and log the result.
+    Assignment Operators: 
+
+    Create a variable named `score` and assign it a value over 21.
+    Use the `+=` operator to add 14 to this variable and log the variable.
+    Then, use the `-=` to subtract 7 from this variable. Log the variable again.
   
   */
   // CODE IN THE OPEN LINES BELOW
-  let counter = 10;
-  counter--;
-  console.log(counter); // 9
+  let score = 28;
+  score += 14;
+  console.log(score); // 42
+  score -= 7;
+  console.log(score); // 35
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -313,13 +324,22 @@ export function exercise_15() {
     
     Assignment Operators: 
     
-    Use `+=` to add to a variable and log the result.
+
+    Create a variable named `savings` and assign it a value over 500
+
+    Use the `*=` operator to multiply the variable by 1.08. 
+    Log the variable to the console.
+
+    Then, use the `/=` operator to divide the variable by .5.
+    Log the variable to the console again.
   
   */
   // CODE IN THE OPEN LINES BELOW
-  let score = 50;
-  score += 10;
-  console.log(score); // 60
+  let savings = 600;
+  savings *= 1.08;
+  console.log(savings); // 648
+  savings /= 0.5;
+  console.log(savings); // 1296 = 2 * 648
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -328,15 +348,17 @@ export function exercise_16() {
    
     Exercise 16
     
-    Assignment Operators: 
+    Falsy Values: 
     
-    Use `*=` to multiply a variable and log the result.
+    Write a conditional statement to check if an empty string is falsy.
+    If it is, log the message "An empty string is falsy" to the console
   
   */
   // CODE IN THE OPEN LINES BELOW
-  let points = 4;
-  points *= 5;
-  console.log(points); // 20
+  let emptyString = "";
+  if (!emptyString) {
+    console.log("An Empty string is falsy");
+  }
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -345,15 +367,20 @@ export function exercise_17() {
    
     Exercise 17
     
-    Falsy Values: 
+    Truthy Values: 
     
-    Check if an empty string is falsy and log the result.
+    Write a conditional statement to check if a string value of "false" is falsy.
+    If it is, log the message "the string is falsy" to the console.
+    Otherwise, log the message, "the string is not falsy" to the console.
+
   
   */
   // CODE IN THE OPEN LINES BELOW
-  let emptyString = "";
-  if (!emptyString) {
-    console.log("Empty string is falsy"); // true
+  let nonEmptyString = "false";
+  if (!nonEmptyString) {
+    console.log("the string is falsy");
+  } else {
+    console.log("the string is not falsy");
   }
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -363,27 +390,11 @@ export function exercise_18() {
    
     Exercise 18
     
-    Truthy Values: 
-    
-    Check if a non-empty string is truthy and log the result.
-  
-  */
-  // CODE IN THE OPEN LINES BELOW
-  let nonEmptyString = "hello";
-  if (nonEmptyString) {
-    console.log("Non-empty string is truthy"); // true
-  }
-  // CODE IN THE OPEN LINES ABOVE
-}
-
-export function exercise_19() {
-  /* 
-   
-    Exercise 19
-    
     Objects: 
-    
-    Create an object and check if two references point to the same object.
+    Create an object and assign it to a variable.
+    Then create another variable, and assign it the first variable as a value.
+    Then, using the `===` operator, check if the first and second varable 
+    are strictly equal
   
   */
   // CODE IN THE OPEN LINES BELOW
@@ -393,14 +404,15 @@ export function exercise_19() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_20() {
+export function exercise_19() {
   /* 
    
-    Exercise 20
+    Exercise 19
 
     Strict vs. Loose Equality: 
     
     Compare `undefined` and `null` using `==` and `===`.
+    Log both results to the console.
     
   
   */
@@ -410,10 +422,10 @@ export function exercise_20() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_21() {
+export function exercise_20() {
   /* 
    
-    Exercise 21
+    Exercise 20
     Switch Statement: 
     
     Use `switch` to check a color and log the corresponding fruit.
@@ -435,10 +447,10 @@ export function exercise_21() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_22() {
+export function exercise_21() {
   /* 
    
-    Exercise 22
+    Exercise 21
     
     Nested Conditionals: 
     
@@ -457,10 +469,10 @@ export function exercise_22() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_23() {
+export function exercise_22() {
   /* 
    
-    Exercise 23
+    Exercise 22
     
     Ternary Operator: 
     Use a ternary operator to assign a value based on a condition.
@@ -473,10 +485,10 @@ export function exercise_23() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_24() {
+export function exercise_23() {
   /* 
    
-    Exercise 24
+    Exercise 23
     
     Combining Logical Operators: 
     
@@ -493,10 +505,10 @@ export function exercise_24() {
   // CODE IN THE OPEN LINES ABOVE
 }
 
-export function exercise_25() {
+export function exercise_24() {
   /* 
    
-    Exercise 25
+    Exercise 24
     
     Using `default` in Switch: Check a day of the week and log if it’s a weekday or weekend.
 
