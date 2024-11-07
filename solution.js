@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_19();
+  exercise_24();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -427,9 +427,11 @@ export function exercise_20() {
    
     Exercise 20
     Switch Statement: 
-    
-    Use `switch` to check a color and log the corresponding fruit.
-    
+
+    Create a variable named `fruitColor` and assign it a string for a color name.
+
+    Then, write a switch statement that will log "Apple" if the fruitColor is red,
+    "Banana" if the fruit color is yellow, and "Unknown fruit" as a default condition.
   
   */
   // CODE IN THE OPEN LINES BELOW
@@ -453,8 +455,13 @@ export function exercise_21() {
     Exercise 21
     
     Nested Conditionals: 
-    
-    Check if a number is positive, negative, or zero.
+
+    Create a variable that stores a positive or negative number.
+
+    Then, create a nested conditional (using if, else if, and else) to
+    log "Positive" if the number is positive, "Negative" if the number
+    is negative, and "Zero" otherwise
+  
   
   */
   // CODE IN THE OPEN LINES BELOW
@@ -476,6 +483,14 @@ export function exercise_22() {
     
     Ternary Operator: 
     Use a ternary operator to assign a value based on a condition.
+    
+    Create a variable named `age` and assign it a number between 12 and 22.
+    Then, create a variable named `canVote` that is assigned a ternary operator
+    with the following return conditions:
+      - if `age` is greater than or equal to 18, return "Yes, can vote"
+      - Otherwise, return "No, too young"
+    
+    Then log the `canVote` variable to the console
   
   */
   // CODE IN THE OPEN LINES BELOW
@@ -491,16 +506,29 @@ export function exercise_23() {
     Exercise 23
     
     Combining Logical Operators: 
-    
-    Use `&&` and `||` together in a condition.
 
+    Create a variable named `isProgramMember` and assign it a value of true or false.
+    Create a variable named `age` and assign it a value between 10 and 85
+
+    Write a condition that checks if isProgramMember is true AND that 
+    their age is below 14 OR over 65
+    
+    Write this condition in one line using parenthesis, 
+    the OR `||` operator, and the AND `&&` operator.
+
+    If the condition returns true, log "Eligible for special renewal discount" to the console.
+    Otherwise, log "Not eligible for special renewal discount" to the console.
   
   */
   // CODE IN THE OPEN LINES BELOW
-  let isMember = true;
-  let ageCheck = 25;
-  if (isMember && (ageCheck > 20 || ageCheck < 30)) {
-    console.log("Eligible for discount");
+  let isProgramMember = true;
+  let ageCheck = 22;
+  const eligibleForDiscount =
+    isProgramMember && (ageCheck < 14 || ageCheck > 65);
+  if (eligibleForDiscount) {
+    console.log("Eligible for special renewal discount");
+  } else {
+    console.log("Not eligible for special renewal discount");
   }
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -509,16 +537,19 @@ export function exercise_24() {
   /* 
    
     Exercise 24
-    
-    Using `default` in Switch: Check a day of the week and log if it’s a weekday or weekend.
 
+    Create a variable named `day` and assign it the name of a day of the week.
+
+    Create a switch statement that uses cascading `case` statements to print 
+    "Weekend" if the day falls on the weekend. Otherwise, print "Weekday" as
+    the default condition
   
   */
   // CODE IN THE OPEN LINES BELOW
   let day = "Saturday";
-  switch (day) {
-    case "Saturday":
-    case "Sunday":
+  switch (day.toLowerCase()) {
+    case "saturday":
+    case "sunday":
       console.log("Weekend");
       break;
     default:
