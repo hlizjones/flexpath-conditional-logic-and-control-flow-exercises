@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_24();
+  exercise_1();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -38,9 +38,11 @@ export function exercise_01() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+
   let a = 10;
   let b = 5;
   console.log(a > b); // true
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -49,7 +51,7 @@ export function exercise_02() {
    
     Exercise 2
     
-    Comparison Operators: 
+    Comparison Operators
 
     1. Create two variables, one assigned to a number and one
        assigned to a string. Then, log the result of comparing them
@@ -58,9 +60,11 @@ export function exercise_02() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+
   let num = 42;
   let str = "42";
   console.log(num === str); // false
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -69,7 +73,7 @@ export function exercise_03() {
    
     Exercise 3
     
-    Conditionals: 
+    Conditionals
 
     1. Create a variable and store an even or odd number, your choice.
     2. Using the `%` (remainder) operator, write an if-else conditional
@@ -84,12 +88,14 @@ export function exercise_03() {
 
   */
   // CODE IN THE OPEN LINES BELOW
+
   let number = 7;
   if (number % 2 === 0) {
     console.log("Even");
   } else {
     console.log("Odd");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -98,7 +104,7 @@ export function exercise_04() {
    
     Exercise 4
     
-    Logical Operators: 
+    Logical Operators
 
     1. Create a variable and assign it a number between 10 and 20
     2. Write an if statement, using the >= (greater than or equal to), 
@@ -107,15 +113,17 @@ export function exercise_04() {
        If it is, have the message "Between 10 and 20" be logged to the console.
 
     3. Modify your initial variable definition to be assigned a number 
-      either less than 10 or greater than 20. Then run your conditional code 
-      again. This time, nothing should log to the console.
+       either less than 10 or greater than 20. Then run your conditional code 
+       again. This time, nothing should log to the console.
   
   */
   // CODE IN THE OPEN LINES BELOW
+
   let value = 17;
   if (value >= 10 && value <= 20) {
     console.log("Between 10 and 20");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -124,7 +132,7 @@ export function exercise_05() {
    
     Exercise 5
     
-    Logical Operators: 
+    Logical Operators
 
     1. Create a variable named `color` that is assigned a color name as a string.
     2. Create an if-else conditional statement that checks if the `color`
@@ -136,13 +144,16 @@ export function exercise_05() {
        Reminder: The logical OR operator in JavaScript is `||`.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let color = "green";
   if (color === "red" || color === "blue") {
     console.log("Color is red or blue");
   } else {
     console.log("Color is not red or blue");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -151,7 +162,7 @@ export function exercise_06() {
    
     Exercise 6
     
-    Logical NOT: 
+    Logical NOT
 
     1. Create a variable and assign it a Falsy value
     2. Then, using the `!` (NOT conditional) operator, 
@@ -160,9 +171,12 @@ export function exercise_06() {
     Use `!` to check if a value is falsy and log the result
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let falsyValue = null;
   console.log(!falsyValue); // true
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -171,14 +185,17 @@ export function exercise_07() {
    
     Exercise 7
     
-    Mathematical Operators: 
+    Mathematical Operators
     
-    Add two numbers and log the result.
+    1. Add two numbers and log the result.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let sum = 4 + 6;
   console.log(sum); // 10
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -187,14 +204,17 @@ export function exercise_08() {
    
     Exercise 8
     
-    Mathematical Operators: 
+    Mathematical Operators
     
-    Subtract one number from another and log the result.
+    1. Subtract one number from another and log the result.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let difference = 10 - 3;
   console.log(difference); // 7
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -203,14 +223,17 @@ export function exercise_09() {
    
     Exercise 9
     
-    Mathematical Operators: 
+    Mathematical Operators
     
-    Multiply two numbers and log the result.
+    1. Multiply two numbers and log the result.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let product = 3 * 4;
   console.log(product); // 12
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -221,18 +244,22 @@ export function exercise_10() {
     
     Mathematical Operators and Conditional Statements: 
     
-    Divide one number by another.
-    If it is even, log "Result is Even" to the console.
-    If it is odd, log "Result is Odd" to the console
+    1. Divide one number by another.
+       
+       If it is even, log "Result is Even" to the console.
+       If it is odd, log "Result is Odd" to the console
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let quotient = 20 / 5;
   if (quotient % 2 == 0) {
     console.log("Result is Even");
   } else {
     console.log("Result is Odd");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -241,14 +268,18 @@ export function exercise_11() {
    
     Exercise 11
     
-    Remainder Operator: 
+    Remainder Operator
     
-    Use the `%` (remainder) operator to find the remainder of a division and log it.
+    1. Use the `%` (remainder) operator to find the 
+       remainder of a division and log it.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let remainder = 10 % 4;
   console.log(remainder); // 2
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -257,7 +288,7 @@ export function exercise_12() {
    
     Exercise 12
     
-    Exponentiation: 
+    Exponentiation
     
     1. Use the `**` (exponentiation) operator to 
        calculate 2 to the power of 3 and log the result.
@@ -265,10 +296,13 @@ export function exercise_12() {
        Log the result
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let power = 2 ** 3;
   console.log(power); // 8
   console.log(11 ** 3.5);
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -277,22 +311,24 @@ export function exercise_13() {
    
     Exercise 13
     
-    Increment: 
+    Increment and Decrement a Variable
 
     1. Create a variable and assign it the number 5.
     2. Increment the variable using the `++` operator, and log the variable.
     3. Then, decrement the variable using the `--` operator twice. 
        Log the variable again.
     
-  
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let count = 5;
   count++;
   console.log(count); // 6
   count--;
   count--;
   console.log(count); // 4
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -301,19 +337,22 @@ export function exercise_14() {
    
     Exercise 14
     
-    Assignment Operators: 
+    Assignment Operators
 
-    Create a variable named `score` and assign it a value over 21.
-    Use the `+=` operator to add 14 to this variable and log the variable.
-    Then, use the `-=` to subtract 7 from this variable. Log the variable again.
+    1. Create a variable named `score` and assign it a value over 21.
+    2. Use the `+=` operator to add 14 to this variable and log the variable.
+    3. Then, use the `-=` to subtract 7 from this variable. Log the variable again.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let score = 28;
   score += 14;
   console.log(score); // 42
   score -= 7;
   console.log(score); // 35
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -322,24 +361,26 @@ export function exercise_15() {
    
     Exercise 15
     
-    Assignment Operators: 
+    Assignment Operators
     
+    1. Create a variable named `savings` and assign it a value over 500
 
-    Create a variable named `savings` and assign it a value over 500
+    2. Use the `*=` operator to multiply the variable by 1.08. 
+       Log the variable to the console.
 
-    Use the `*=` operator to multiply the variable by 1.08. 
-    Log the variable to the console.
-
-    Then, use the `/=` operator to divide the variable by .5.
-    Log the variable to the console again.
+    3. Then, use the `/=` operator to divide the variable by .5.
+       Log the variable to the console again.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let savings = 600;
   savings *= 1.08;
   console.log(savings); // 648
   savings /= 0.5;
   console.log(savings); // 1296 = 2 * 648
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -348,17 +389,20 @@ export function exercise_16() {
    
     Exercise 16
     
-    Falsy Values: 
+    Falsy Values
     
-    Write a conditional statement to check if an empty string is falsy.
-    If it is, log the message "An empty string is falsy" to the console
+    1. Write a conditional statement to check if an empty string is falsy.
+       If it is, log the message "An empty string is falsy" to the console
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let emptyString = "";
   if (!emptyString) {
     console.log("An Empty string is falsy");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -369,19 +413,23 @@ export function exercise_17() {
     
     Truthy Values: 
     
-    Write a conditional statement to check if a string value of "false" is falsy.
-    If it is, log the message "the string is falsy" to the console.
-    Otherwise, log the message, "the string is not falsy" to the console.
+    1. Write a conditional statement to check if a string value of "false" is falsy.
+       
+       If it is, log the message "the string is falsy" to the console.
+       Otherwise, log the message, "the string is not falsy" to the console.
 
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let nonEmptyString = "false";
   if (!nonEmptyString) {
     console.log("the string is falsy");
   } else {
     console.log("the string is not falsy");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -390,17 +438,21 @@ export function exercise_18() {
    
     Exercise 18
     
-    Objects: 
-    Create an object and assign it to a variable.
-    Then create another variable, and assign it the first variable as a value.
-    Then, using the `===` operator, check if the first and second varable 
-    are strictly equal
+    Objects
+    
+    1. Create an object and assign it to a variable.
+    2. Then create another variable, and assign it the first variable as a value.
+    3. Then, using the `===` operator, check if the first and second varable 
+       are strictly equal. Log the result to the console.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let obj1 = { name: "Alice" };
   let obj2 = obj1;
   console.log(obj1 === obj2); // true
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -409,16 +461,19 @@ export function exercise_19() {
    
     Exercise 19
 
-    Strict vs. Loose Equality: 
+    Strict vs. Loose Equality
     
-    Compare `undefined` and `null` using `==` and `===`.
-    Log both results to the console.
+    1. Compare `undefined` and `null` using both `==` and `===`.
+       Log both results to the console.
     
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   console.log(undefined == null); // true
   console.log(undefined === null); // false
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -428,13 +483,17 @@ export function exercise_20() {
     Exercise 20
     Switch Statement: 
 
-    Create a variable named `fruitColor` and assign it a string for a color name.
+    1. Create a variable named `fruitColor` and 
+       assign it a string for a color name.
 
-    Then, write a switch statement that will log "Apple" if the fruitColor is red,
-    "Banana" if the fruit color is yellow, and "Unknown fruit" as a default condition.
+    2. Then, write a switch statement that will log "Apple" if the 
+       fruitColor is red, "Banana" if the fruit color is yellow, and 
+       "Unknown fruit" as a default condition.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let fruitColor = "red";
   switch (fruitColor) {
     case "red":
@@ -446,6 +505,7 @@ export function exercise_20() {
     default:
       console.log("Unknown fruit");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -456,15 +516,17 @@ export function exercise_21() {
     
     Nested Conditionals: 
 
-    Create a variable that stores a positive or negative number.
+    1. Create a variable that stores a positive or negative number.
 
-    Then, create a nested conditional (using if, else if, and else) to
-    log "Positive" if the number is positive, "Negative" if the number
-    is negative, and "Zero" otherwise
+    2. Then, create a nested conditional (using if, else if, and else) to
+       log "Positive" if the number is positive, "Negative" if the number
+       is negative, and "Zero" otherwise.
   
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let numberCheck = -10;
   if (numberCheck > 0) {
     console.log("Positive");
@@ -473,6 +535,7 @@ export function exercise_21() {
   } else {
     console.log("Zero");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -481,22 +544,24 @@ export function exercise_22() {
    
     Exercise 22
     
-    Ternary Operator: 
-    Use a ternary operator to assign a value based on a condition.
+    Ternary Operator
     
-    Create a variable named `age` and assign it a number between 12 and 22.
-    Then, create a variable named `canVote` that is assigned a ternary operator
+    1. Create a variable named `age` and assign it a number between 12 and 22.
+    2. Then, create a variable named `canVote` that is assigned a ternary operator
     with the following return conditions:
       - if `age` is greater than or equal to 18, return "Yes, can vote"
       - Otherwise, return "No, too young"
     
-    Then log the `canVote` variable to the console
+    3. Then log the `canVote` variable to the console
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let age = 18;
   let canVote = age >= 18 ? "Yes, can vote" : "No, too young";
   console.log(canVote);
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -505,22 +570,25 @@ export function exercise_23() {
    
     Exercise 23
     
-    Combining Logical Operators: 
+    Combining Logical Operators
 
-    Create a variable named `isProgramMember` and assign it a value of true or false.
-    Create a variable named `age` and assign it a value between 10 and 85
+    1. Create a variable named `isProgramMember` and assign it a value of true or false.
+    2. Create a variable named `age` and assign it a value between 10 and 85
 
-    Write a condition that checks if isProgramMember is true AND that 
-    their age is below 14 OR over 65
+    3. Write a condition that checks if isProgramMember is true AND that 
+       their age is below 14 OR over 65
     
-    Write this condition in one line using parenthesis, 
-    the OR `||` operator, and the AND `&&` operator.
+       Write this condition in one line using parenthesis, 
+       the OR `||` operator, and the AND `&&` operator.
 
-    If the condition returns true, log "Eligible for special renewal discount" to the console.
-    Otherwise, log "Not eligible for special renewal discount" to the console.
+    4. If the condition returns true, log 
+       "Eligible for special renewal discount" to the console.
+        Otherwise, log "Not eligible for special renewal discount" to the console.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let isProgramMember = true;
   let ageCheck = 22;
   const eligibleForDiscount =
@@ -530,6 +598,7 @@ export function exercise_23() {
   } else {
     console.log("Not eligible for special renewal discount");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -538,14 +607,16 @@ export function exercise_24() {
    
     Exercise 24
 
-    Create a variable named `day` and assign it the name of a day of the week.
+    1. Create a variable named `day` and assign it the name of a day of the week.
 
-    Create a switch statement that uses cascading `case` statements to print 
-    "Weekend" if the day falls on the weekend. Otherwise, print "Weekday" as
-    the default condition
+    2. Create a switch statement that uses cascading `case` statements to print 
+      "Weekend" if the day falls on the weekend. Otherwise, print "Weekday" if 
+      it does not.
   
   */
+
   // CODE IN THE OPEN LINES BELOW
+
   let day = "Saturday";
   switch (day.toLowerCase()) {
     case "saturday":
@@ -555,5 +626,6 @@ export function exercise_24() {
     default:
       console.log("Weekday");
   }
+
   // CODE IN THE OPEN LINES ABOVE
 }
