@@ -32,8 +32,8 @@ data types and converting values from one type to another.
 8. To run `exercises.js` you will then use the command `node exercises.js` in the
    terminal to run the file.
 
-We have included a screen recording showing this process in the file
-`run-exercise-3-recording.mp4` in this repo.
+We have included the screen recording from exercise 2 showing how to run these
+types of exercise files. 
 
 Exercise solutions are in the `/solution` folder
 
