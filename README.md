@@ -3,8 +3,8 @@
 
 ## Exercise overview
 
-The intention of this exercise is to give you more experience working with JavaScript's
-data types and converting values from one type to another.
+The intention of this exercise is to give you more experience working with conditional
+logic in JavaScript and controlling program flow.
 
 
 ## Getting Started
